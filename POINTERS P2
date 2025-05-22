@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+// Global variables
+int a = 10, b = 20;
+
+int main() {
+    int *it, *csa;
+
+    it = &a;
+    csa = &b;
+
+    a ++;
+    --b;
+    ++*it;
+    --*csa;
+
+    printf("a = %d, b = %d\n", a, b);
+    printf("it points to = %d, csa points to = %d\n", *it, *csa);
+
+    return 0;
+}
+OUTPUT:a = 12, b = 18
+it points to = 12, csa points to = 18
