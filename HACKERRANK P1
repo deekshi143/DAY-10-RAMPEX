@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+
+
+
+int main() {
+    char ch;
+
+    
+    scanf("%c", &ch);
+
+    
+    if (isdigit(ch)) {
+        printf("NUMBER\n");
+    } else if (isalpha(ch)) {
+        printf("ALPHABET\n");
+    } else {
+        printf("SPECIAL CHARACTER\n");
+    }
+
+    return 0;
+}
